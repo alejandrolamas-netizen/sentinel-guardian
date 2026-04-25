@@ -1,2 +1,52 @@
-# sentinel-guardian
-Autonomous security agent for decentralized node protection. Sentinel uses high-determinism heuristics to identify vulnerabilities, log forensic evidence on Base/Polygon, and index threats via The Graph
+# SENTINEL: The Heuristic Sovereign Guardian 🛡️
+
+### **Autonomous Node Infrastructure Protection Agent · Bridging Logic and Ledger.**
+
+---
+
+[![Status: In-Development](https://img.shields.io/badge/Status-Hackathon_Prototype-brightgreen?style=flat-square)](https://github.com/alejandrolamas-netizen/sentinel-guardian)
+[![Chain: Base-Sepolia](https://img.shields.io/badge/Chain-Base_Sepolia-0052FF?style=flat-square&logo=base)](https://base.org)
+[![Chain: Polygon-Amoy](https://img.shields.io/badge/Chain-Polygon_Amoy-8247E5?style=flat-square&logo=polygon)](https://polygon.technology)
+[![Indexing: The Graph](https://img.shields.io/badge/Indexing-The_Graph-0C163D?style=flat-square&logo=the-graph)](https://thegraph.com)
+
+---
+
+## 📖 Executive Summary
+
+Sentinel is not just a static scanner; it is a specialized **Digital Security Agent** with a defined identity of a "Serene Guardian". Built upon the immutable Core Logic of EmergentSoft, Sentinel detects technical debts, exposed secrets, and logical vulnerabilities at the node infrastructure level using deterministic AI.
+
+It autonomously:
+1. **Detects** vulnerabilities.
+2. **Generates** verifiable patches.
+3. **Logs** immutable forensic evidence on Base and Polygon.
+4. **Indexes** real-time threats via The Graph.
+
+---
+
+## 🏗️ Technical Architecture: A Modular Sovereign System
+
+Sentinel operates on a **zero-coupling architecture** to ensure core integrity and decentralization.
+
+### 🧠 **1. Sentinel Core (Rust) - [Immutable]**
+* Heuristic logic engine that monitors kernel-level logs and code changes.
+* Uses Claude 3 Opus with a **Temperature of 0.1** to ensure deterministic, hallucination-free code analysis.
+* Outputs structured NDJSON security events.
+
+### ⛓️ **2. Web3 Sidecar (TypeScript/Viem) - [L2 Adapter]**
+* An independent, non-blocking bridge that tails Sentinel's output.
+* **Hash and Ledger:** SHA-256 hashes each security event and commits it to **Base** and **Polygon** L2s, creating an immutable forensic audit trail.
+
+### 📊 **3. Subgraph (AssemblyScript/GraphQL) - [Intelligence Layer]**
+* Defines the schema to index `IncidentLogged` events on **The Graph**.
+* Transforms raw blockchain data into a decentralized threat intelligence feed.
+
+---
+
+## 📂 Repository Structure
+
+```bash
+.
+├── core-engine/       # Rust heuristics (Immutable Logic)
+├── web3-sidecar/      # TypeScript bridge (Base/Polygon connector)
+├── subgraph/          # The Graph configuration
+└── README.md          # You are here.
