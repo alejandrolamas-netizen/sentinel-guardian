@@ -13,3 +13,9 @@
 ```bash
 git clone [https://github.com/alejandro/sentinel-guardian.git](https://github.com/alejandro/sentinel-guardian.git)
 python sentinel_init.py --mode autonomous
+---
+## ⚖️ Intellectual Property Notice
+**Sentinel Guardian™** and its underlying core architectures, including but not limited to the **QAIzero™ Orchestration Engine** and **Bell Sentinel Tamper Detection** logic, are the exclusive intellectual property of **Alejandro Lamas**.
+
+**Current Status:** Patent Pending (USPTO). 
+This repository is for demonstration and integrity-verification purposes only. Unauthorized copying, distribution, or reverse engineering of the algorithms contained herein is strictly prohibited and subject to legal action.
