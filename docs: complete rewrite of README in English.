@@ -40,7 +40,25 @@ Sentinel operates on a **zero-coupling architecture** to ensure core integrity a
 * Defines the schema to index `IncidentLogged` events on **The Graph**.
 * Transforms raw blockchain data into a decentralized threat intelligence feed.
 
----
+---# SENTINEL: The Heuristic Sovereign Guardian 🛡️
+
+Sentinel is an advanced security ecosystem designed for data integrity protection and autonomous AI orchestration.
+
+## 🚀 QAIzero: Adaptive Orchestration Engine
+We have recently integrated **QAIzero**, the adaptive orchestration core of the system. This module enables:
+
+* **Hardware-Agnostic Inference:** Optimizing LLM performance across any local environment using resource-efficient modules.
+* **Resource Efficiency:** Intelligent system resource management to ensure seamless execution without external connectivity.
+* **Autonomous Workflow:** Task coordination for security and processing without constant human intervention.
+
+## 🛠️ Key Components
+* `qaizero_orchestration.py`: The central engine managing execution flow and logic for QA Zero components.
+* `sentinel_prompt.py`: Instruction processing logic and heuristic filtering.
+* `tests/`: Automated test suite to ensure core stability.
+
+## 🔒 Roadmap: Quantum-Inspired Security
+Development is underway for **Bell Sentinel Tamper Detection**, a security layer inspired by quantum entanglement for real-time data tamper detection.
+
 
 ## 📂 Repository Structure
 
