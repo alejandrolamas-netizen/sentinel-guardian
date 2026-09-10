@@ -1,30 +1,44 @@
 # Sentinel Guardian 🛡️
-**The Security Layer for QAIzero Orchestration**
 
-## Overview<img width="720" height="1600" alt="1000000945" src="https://github.com/user-attachments/assets/4925e1d9-a603-454a-ab8a-b050c2589dac" />
-<img width="720" height="1600" alt="1000000941" src="https://github.com/user-attachments/assets/8ef8fa4d-96ef-4884-85db-7c0732e95b94" />
-<img width="720" height="1600" alt="1000000938" src="https://github.com/user-attachments/assets/1d1b584c-e007-4c24-8b7b-52d141a7307d" />
-<img width="720" height="1600" alt="1000000940" src="https://github.com/user-attachments/assets/708c5011-aa60-4453-acb9-eb71d2ee456a" />
-<img width="720" height="1600" alt="1000000944" src="https://github.com/user-attachments/assets/05390409-b0d6-4926-9379-ce55905eb2f2" />
+**EmergentSoft · Security & Integrity Layer**
 
+## What it is
 
+Sentinel Guardian is the security and integrity layer associated with EmergentSoft's AI orchestration stack. It is designed to protect autonomous execution through tamper detection and system-integrity controls around QAIzero orchestration.
 
+## Business problem
 
+Enterprise AI systems require a controlled security boundary before autonomous actions can affect business infrastructure. Sentinel addresses that integrity boundary.
 
-**Sentinel Guardian** is a high-performance security module designed to provide tamper detection and system integrity for the **QAIzero** adaptive AI engine.
+## Core capabilities
 
-## Key Features
-* **QAIzero Integration:** Built specifically to protect the QAIzero orchestration engine.
-* **Proactive Tamper Detection:** Advanced monitoring to identify system breaches in real-time.
-* **Resource Efficient:** Engineered for minimal overhead, following the QAIzero efficiency philosophy.
+- QAIzero orchestration integration
+- Proactive tamper detection
+- Runtime integrity monitoring
+- Low-overhead security controls
 
-## Quick Start
-```bash
-git clone [https://github.com/alejandro/sentinel-guardian.git](https://github.com/alejandro/sentinel-guardian.git)
-python sentinel_init.py --mode autonomous
----
-## ⚖️ Intellectual Property Notice
-**Sentinel Guardian™** and its underlying core architectures, including but not limited to the **QAIzero™ Orchestration Engine** and **Bell Sentinel Tamper Detection** logic, are the exclusive intellectual property of **Alejandro Lamas**.
+## Architecture position
 
-**Current Status:** Patent Pending (USPTO). 
-This repository is for demonstration and integrity-verification purposes only. Unauthorized copying, distribution, or reverse engineering of the algorithms contained herein is strictly prohibited and subject to legal action.
+`Enterprise Infrastructure → M8s → Digital Mates → QAIzero → Sentinel → Controlled Execution`
+
+Sentinel is a security component, not a substitute for the Mates platform or M8s governance layer.
+
+## Evidence & status
+
+The repository contains the available implementation and demonstration material. Claims about production deployment, certifications, or external validation must be supported by independent evidence.
+
+## Security & IP
+
+See [`SECURITY.md`](SECURITY.md) and [`LICENSE`](LICENSE). Third-party components remain subject to their respective licenses.
+
+## Documentation
+
+Architecture and implementation documentation should be maintained in-repository as the technical source of truth.
+
+## Commercial role
+
+Sentinel is positioned as an enterprise security component that can be integrated into governed AI deployments and M8s/Mates architectures.
+
+## Owner
+
+Alejandro Lamas — Founder & CEO, EmergentSoft
