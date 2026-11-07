@@ -26,6 +26,8 @@ class SentinelVisitor(ast.NodeVisitor):
         if isinstance(node, ast.Name):
             return None, node.id
         if isinstance(node, ast.Attribute):
+            if isinstance(node.value, ast.Name):
+                return node.value.id, node.attr
             module, _ = SentinelVisitor.call_name(node.value)
             return module, node.attr
         return None, ""
