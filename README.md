@@ -40,3 +40,27 @@ See `SECURITY.md` and `LICENSE`.
 ## Owner
 
 Alejandro Lamas — Founder & CEO, EmergentSoft
+
+
+## Implemented Python static-analysis prototype
+
+The current branch includes a deterministic AST-based analyzer in `sentinel_prompt.py` with unit tests and a GitHub Actions workflow. The prototype checks a limited set of patterns:
+
+| Rule | Check | Severity |
+|---|---|---|
+| PY001 | `eval()` / `exec()` dynamic execution | HIGH |
+| PY002 | `subprocess` with `shell=True` | HIGH |
+| PY003 | `pickle.load()` / `pickle.loads()` | HIGH |
+| PY004 | `yaml.load()` without an explicit safe loader | MEDIUM |
+| PY005 | Possible hard-coded credential string assignments | HIGH |
+
+Run locally:
+
+```bash
+python sentinel_prompt.py path/to/source.py
+python -m unittest discover -s tests -v
+```
+
+The analyzer emits structured JSON findings with rule IDs and source line numbers. It does not execute analyzed code, automatically patch files, perform data-flow analysis, inspect dependencies, or monitor runtime behavior. A clean report is not proof that a program is secure. Credential detection is heuristic and may produce false positives or miss secrets.
+
+The TypeScript sidecar and mapping files remain illustrative scaffolding; their log messages are not evidence of blockchain transactions or deployed The Graph indexing.
